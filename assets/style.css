@@ -38,6 +38,8 @@ h3 { font-size: 1.25rem; font-weight: 600; letter-spacing: -.01em; }
 p  { color: var(--secondary); }
 a  { color: var(--blue); text-decoration: none; }
 a:hover { text-decoration: underline; }
+.text-link { color: inherit; }
+.text-link:hover { color: var(--blue); }
 
 /* ── Layout ── */
 .container { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
@@ -219,6 +221,65 @@ nav {
 .privacy-panel h3   { font-size: 1rem; margin-bottom: 8px; }
 .privacy-panel p    { font-size: .875rem; }
 
+/* ── Product landing pages ── */
+.product-hero {
+  padding: 88px 0 72px;
+  background: linear-gradient(180deg, #f0f6ff 0%, #fff 100%);
+}
+.product-hero-inner { max-width: 780px; }
+.breadcrumbs {
+  display: flex; gap: 8px; flex-wrap: wrap;
+  margin-bottom: 28px; color: var(--muted); font-size: .82rem;
+}
+.breadcrumbs a { color: var(--secondary); }
+.product-hero h1 { margin-bottom: 22px; }
+.product-hero .lead { font-size: 1.2rem; max-width: 700px; margin-bottom: 30px; }
+.product-kicker {
+  display: inline-block; margin-bottom: 16px;
+  color: var(--blue); font-size: .82rem; font-weight: 600;
+  letter-spacing: .08em; text-transform: uppercase;
+}
+.content-grid {
+  display: grid; grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 64px; align-items: start;
+}
+.content-main h2 { margin: 56px 0 18px; }
+.content-main h2:first-child { margin-top: 0; }
+.content-main h3 { margin: 28px 0 10px; }
+.content-main p { margin-bottom: 18px; }
+.content-main ul, .content-main ol { margin: 0 0 22px 22px; color: var(--secondary); }
+.content-main li { margin-bottom: 10px; padding-left: 4px; }
+.page-aside {
+  position: sticky; top: 76px;
+  border: 1px solid var(--rule); border-radius: var(--radius);
+  padding: 28px; background: var(--bg-alt);
+}
+.page-aside h2 { font-size: 1.05rem; margin-bottom: 14px; }
+.page-aside ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.page-aside a { font-size: .9rem; }
+.evidence-box, .note-box {
+  border-radius: 12px; padding: 22px 24px; margin: 28px 0;
+}
+.evidence-box { background: #edf7f2; border: 1px solid #b9dfca; }
+.note-box { background: #f5f5f7; border: 1px solid var(--rule); }
+.evidence-box p, .note-box p { margin: 0; font-size: .92rem; }
+.feature-points {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px; margin: 28px 0;
+}
+.feature-point {
+  border: 1px solid var(--rule); border-radius: 12px; padding: 22px;
+}
+.feature-point h3 { margin: 0 0 8px; font-size: 1rem; }
+.feature-point p { margin: 0; font-size: .9rem; }
+.source-list { font-size: .9rem; }
+.page-cta {
+  margin-top: 56px; padding: 36px;
+  background: var(--navy); border-radius: var(--radius);
+}
+.page-cta h2 { color: #fff; margin: 0 0 10px; font-size: 1.6rem; }
+.page-cta p { color: #a8b8cc; margin-bottom: 22px; }
+
 /* ── Who it's for ── */
 .audience-box {
   background: var(--bg);
@@ -343,4 +404,8 @@ footer {
   .section { padding: 64px 0; }
   .hero { padding: 72px 0 64px; }
   .audience-box { padding: 32px 24px; }
+  .content-grid { grid-template-columns: 1fr; gap: 40px; }
+  .page-aside { position: static; }
+  .feature-points { grid-template-columns: 1fr; }
+  .product-hero { padding: 64px 0 52px; }
 }
