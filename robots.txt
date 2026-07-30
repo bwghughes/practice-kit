@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://practice-kit.app/sitemap.xml
