@@ -63,10 +63,10 @@ nav {
   height: 52px;
 }
 .nav-logo {
-  font-size: 1.1rem; font-weight: 700;
-  color: var(--text); letter-spacing: -.02em;
+  display: inline-flex; align-items: center;
+  color: var(--text);
 }
-.nav-logo span { color: var(--blue); }
+.nav-logo img { display: block; width: 154px; height: auto; }
 .nav-links { display: flex; gap: 32px; list-style: none; }
 .nav-links a { font-size: .9rem; color: var(--secondary); }
 .nav-links a:hover { color: var(--blue); text-decoration: none; }
@@ -426,8 +426,7 @@ footer {
   margin-bottom: 40px;
 }
 .footer-brand p { font-size: .875rem; color: #8899aa; margin-top: 10px; max-width: 280px; }
-.footer-logo { font-size: 1.1rem; font-weight: 700; color: #fff; }
-.footer-logo span { color: #6ab0f5; }
+.footer-logo img { display: block; width: 170px; height: auto; }
 .footer-col h4 { color: #fff; font-size: .875rem; font-weight: 600; margin-bottom: 14px; }
 .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
 .footer-col li a { font-size: .875rem; color: #8899aa; }

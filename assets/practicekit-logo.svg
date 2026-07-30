@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 52" role="img" aria-labelledby="title">
+  <title id="title">PracticeKit</title>
+  <defs>
+    <linearGradient id="tile" x1="4" y1="2" x2="48" y2="50" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#102b52"/>
+      <stop offset="1" stop-color="#07162f"/>
+    </linearGradient>
+    <linearGradient id="stem" x1="0" y1="18" x2="0" y2="45" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#19a8ff"/>
+      <stop offset="1" stop-color="#0071e3"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="50" height="50" rx="12" fill="url(#tile)"/>
+  <path d="M14 11h12c8.9 0 14.6 5.5 14.6 13.7S34.9 38.4 26 38.4h-5.4v-7.5H26c4.2 0 6.8-2.3 6.8-6.2s-2.6-6.2-6.8-6.2H14c-2.3 0-3.8-1.5-3.8-3.8S11.7 11 14 11Z" fill="#fff"/>
+  <rect x="10.2" y="18.5" width="8" height="25.8" rx="2.8" fill="url(#stem)"/>
+  <text x="64" y="37" fill="#10213e" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="31" font-weight="700" letter-spacing="-1.2">PracticeKit</text>
+</svg>
