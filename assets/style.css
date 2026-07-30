@@ -225,6 +225,23 @@ nav {
 .privacy-panel h3   { font-size: 1rem; margin-bottom: 8px; }
 .privacy-panel p    { font-size: .875rem; }
 
+/* ── Product focus ── */
+.focus-section { border-top: 1px solid var(--rule); }
+.focus-grid {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px;
+}
+.focus-card {
+  padding: 30px; border: 1px solid var(--rule);
+  border-radius: var(--radius); background: var(--bg);
+}
+.focus-icon {
+  display: flex; width: 34px; height: 34px; align-items: center; justify-content: center;
+  margin-bottom: 16px; border: 2px solid var(--blue); border-radius: 50%;
+  color: var(--blue); font-weight: 700;
+}
+.focus-card h3 { font-size: 1.05rem; margin-bottom: 8px; }
+.focus-card p { font-size: .9rem; }
+
 /* ── Product landing pages ── */
 .product-hero {
   padding: 88px 0 72px;
@@ -432,6 +449,7 @@ footer {
   .content-grid { grid-template-columns: 1fr; gap: 40px; }
   .page-aside { position: static; }
   .feature-points { grid-template-columns: 1fr; }
+  .focus-grid { grid-template-columns: 1fr; }
   .values-grid { grid-template-columns: 1fr; }
   .profile-header { grid-template-columns: 1fr; }
   .product-hero { padding: 64px 0 52px; }
