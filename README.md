@@ -4,29 +4,29 @@ Static marketing site for PracticeKit, published via GitHub Pages.
 
 ## Files
 
-- `index.html` — main marketing page
-- `privacy.html` — privacy policy, data practices, accessibility statement, and disclaimer
+- `index.html` — main landing page (early-access signup)
+- `privacy.html` — privacy policy, data practices, accessibility, disclaimer
+- Product/SEO pages under feature folders (`secure-counselling-notes/`, etc.)
+- `about/` and `authors/helen-hughes/` — company and founder pages
 - `assets/style.css` — shared stylesheet
+- `sitemap.xml` / `robots.txt` — crawl guidance
 
 ## Publishing on GitHub Pages
 
-1. Create a new GitHub repo (e.g. `practicekit-website`)
-2. Push this folder to the `main` branch
-3. Go to **Settings → Pages**
-4. Set source to **Deploy from a branch**, branch `main`, folder `/ (root)`
-5. Your site will be live at `https://yourusername.github.io/practicekit-website`
+1. Push to the `main` branch
+2. Settings → Pages → Deploy from branch `main`, folder `/ (root)`
+3. Custom domain: `CNAME` is set to `practice-kit.app`
 
-To use a custom domain (e.g. `practicekit.app`):
-1. Add a `CNAME` file containing just your domain name
-2. Configure your DNS with your registrar
-3. Set the custom domain in GitHub Pages settings
+## SEO / campaign notes
+
+- Homepage title and meta description prioritise early-access signup
+- FAQ section with `FAQPage` schema for rich results
+- `SoftwareApplication` schema with pre-order / early-access offer
+- Breadcrumb schema on product and about pages
+- Open Graph + Twitter large-image cards sitewide
 
 ## TODO before launch
 
-- [ ] Replace `hello@practicekit.app` with real contact email in `privacy.html`
 - [ ] Add App Store link once available
 - [ ] Add real screenshots of the app
-- [ ] Wire up the email capture form (e.g. Mailchimp, ConvertKit, or Formspree)
-- [ ] Add CNAME file for custom domain
-- [ ] Add Open Graph / social preview meta tags
-- [ ] Add favicon
+- [ ] Confirm Formspree / email capture destination for campaign traffic
