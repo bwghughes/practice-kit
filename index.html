@@ -3,25 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Private Counselling Record App for iPad | PracticeKit</title>
-  <meta name="description" content="Private professional records for UK counsellors: client notes, reflective CPD, supervision impact and safeguarding, kept on your iPad and out of the cloud.">
-  <meta name="robots" content="index, follow, max-image-preview:large">
+  <title>PracticeKit | Private Counselling Records App for iPad — Early Access</title>
+  <meta name="description" content="Register for early access to PracticeKit. Private professional records for UK counsellors: client notes, CPD, supervision and safeguarding—kept on your iPad, out of the cloud.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <meta name="theme-color" content="#1a2942">
+  <meta name="author" content="Helen Hughes">
   <link rel="canonical" href="https://practice-kit.app/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/favicon.svg">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_GB">
   <meta property="og:site_name" content="PracticeKit">
-  <meta property="og:title" content="Private Counselling Record App for iPad | PracticeKit">
-  <meta property="og:description" content="Client records, reflective CPD, supervision and safeguarding—kept on your iPad and out of the cloud.">
+  <meta property="og:title" content="PracticeKit | Private Counselling Records App for iPad — Early Access">
+  <meta property="og:description" content="Register for early access. Client notes, CPD, supervision and safeguarding—kept on your iPad and out of the cloud.">
   <meta property="og:url" content="https://practice-kit.app/">
   <meta property="og:image" content="https://practice-kit.app/assets/og-practicekit.png">
   <meta property="og:image:width" content="1731">
   <meta property="og:image:height" content="909">
   <meta property="og:image:alt" content="PracticeKit — Your professional records. Private by design.">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Private Counselling Record App for iPad | PracticeKit">
-  <meta name="twitter:description" content="The private professional-record app for UK counsellors. No cloud database. No AI session transcription.">
+  <meta name="twitter:title" content="PracticeKit | Private Counselling Records for iPad — Early Access">
+  <meta name="twitter:description" content="Register for early access. No cloud database. No AI session transcription. Built for UK counsellors.">
+  <meta name="twitter:image" content="https://practice-kit.app/assets/og-practicekit.png">
+  <meta name="twitter:image:alt" content="PracticeKit — Your professional records. Private by design.">
   <link rel="stylesheet" href="assets/style.css">
   <script type="application/ld+json">
   {
@@ -33,19 +37,41 @@
         "name": "PracticeKit",
         "url": "https://practice-kit.app/",
         "email": "hello@practicekit.app",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://practice-kit.app/assets/practicekit-logo.svg"
+        },
         "founder": {
           "@type": "Person",
+          "@id": "https://practice-kit.app/authors/helen-hughes/#person",
           "name": "Helen Hughes",
-          "jobTitle": "BACP Registered Therapist"
-        }
+          "jobTitle": "BACP Registered Therapist",
+          "url": "https://helen-hughes.com"
+        },
+        "sameAs": ["https://helen-hughes.com"]
       },
       {
         "@type": "WebSite",
         "@id": "https://practice-kit.app/#website",
         "url": "https://practice-kit.app/",
         "name": "PracticeKit",
+        "description": "Private professional-record app for UK counsellors and therapists.",
         "inLanguage": "en-GB",
         "publisher": {"@id": "https://practice-kit.app/#organization"}
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://practice-kit.app/#webpage",
+        "url": "https://practice-kit.app/",
+        "name": "PracticeKit | Private Counselling Records App for iPad — Early Access",
+        "isPartOf": {"@id": "https://practice-kit.app/#website"},
+        "about": {"@id": "https://practice-kit.app/#app"},
+        "description": "Register for early access to PracticeKit, the private professional-record app for UK counsellors.",
+        "inLanguage": "en-GB",
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://practice-kit.app/assets/og-practicekit.png"
+        }
       },
       {
         "@type": "SoftwareApplication",
@@ -55,11 +81,67 @@
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "iPadOS",
         "description": "A private professional-record app for UK counsellors and therapists, with client records, reflective CPD, supervision and safeguarding stored on iPad.",
+        "offers": {
+          "@type": "Offer",
+          "name": "Early access registration",
+          "availability": "https://schema.org/PreOrder",
+          "url": "https://practice-kit.app/#contact",
+          "price": "0",
+          "priceCurrency": "GBP",
+          "description": "Register your interest for launch notification. No payment required."
+        },
         "audience": {
           "@type": "ProfessionalAudience",
           "audienceType": "Counsellors, psychotherapists and therapists"
         },
-        "publisher": {"@id": "https://practice-kit.app/#organization"}
+        "publisher": {"@id": "https://practice-kit.app/#organization"},
+        "creator": {"@id": "https://practice-kit.app/authors/helen-hughes/#person"}
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://practice-kit.app/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is PracticeKit?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PracticeKit is a private professional-record app for UK counsellors and therapists. It brings client notes, reflective CPD, supervision and safeguarding into one iPad app, without a cloud database, client accounts or AI session transcription."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is my client data stored?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Working records stay on your iPad. PracticeKit does not synchronise client data to a PracticeKit cloud database. Optional backup exports are encrypted with a password only you know."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does PracticeKit record or transcribe counselling sessions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. PracticeKit does not record, transcribe or generate notes from counselling sessions. You decide what belongs in the professional record."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who is PracticeKit for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PracticeKit is a practitioner-only app for qualified counsellors, psychotherapists and therapists practising in the UK. Clients do not book, pay, message or create accounts through it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When does PracticeKit launch?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PracticeKit is coming to the App Store for iPad. Register your interest on this page and you will be notified when early access is available."
+            }
+          }
+        ]
       }
     ]
   }
@@ -70,14 +152,12 @@
 <!-- ── Navigation ── -->
 <nav aria-label="Primary navigation">
   <div class="container nav-inner">
-    <a class="nav-logo" href="/" aria-label="PracticeKit home"><img src="/assets/practicekit-logo.svg" alt="PracticeKit"></a>
+    <a class="nav-logo" href="/" aria-label="PracticeKit home"><img src="/assets/practicekit-logo.svg" alt="PracticeKit" width="154" height="28"></a>
     <ul class="nav-links">
       <li><a href="#features">Features</a></li>
-      <li><a href="#compliance">Professional Records</a></li>
-      <li><a href="#privacy">Privacy &amp; Security</a></li>
-      <li><a href="/authors/helen-hughes/">Founder</a></li>
+      <li><a href="#privacy">Privacy</a></li>
+      <li><a href="#faq">FAQ</a></li>
       <li><a href="/about/">About</a></li>
-      <li><a href="privacy.html">Privacy Policy</a></li>
     </ul>
     <a class="nav-cta" href="#contact">Get Early Access</a>
   </div>
@@ -87,13 +167,14 @@
 <main>
 <section class="hero">
   <div class="container">
+    <p class="hero-brand">PracticeKit</p>
     <h1>Your professional records.<br>Private by design.</h1>
-    <p class="lead">PracticeKit gives UK counsellors one clear place for client notes, reflective CPD, supervision impact and safeguarding—kept on your iPad and out of the cloud.</p>
+    <p class="lead">One clear place for client notes, reflective CPD, supervision and safeguarding—kept on your iPad and out of the cloud.</p>
     <div class="hero-actions">
       <a href="#contact" class="btn-primary">Get Early Access</a>
-      <a href="#features"  class="btn-secondary">See Features</a>
+      <a href="#features" class="btn-secondary">See Features</a>
     </div>
-    <p class="hero-disclaimer">iPad only · No cloud database · No client accounts · No AI session transcription</p>
+    <p class="hero-disclaimer">iPad only · No cloud database · No AI session transcription</p>
   </div>
 </section>
 
@@ -104,7 +185,6 @@
       <div class="trust-item"><span class="check"></span>Practitioner-only workspace</div>
       <div class="trust-item"><span class="check"></span>AES-256 encrypted exports</div>
       <div class="trust-item"><span class="check"></span>Working records stay on-device</div>
-      <div class="trust-item"><span class="check"></span>No recording or transcription</div>
       <div class="trust-item"><span class="check"></span>Face ID &amp; Touch ID protected</div>
     </div>
   </div>
@@ -114,273 +194,178 @@
 <section class="section" id="features">
   <div class="container">
     <div class="section-header">
-      <span class="eyebrow">Professional depth without clinic-software clutter</span>
-      <h2>Built around the records counsellors actually keep</h2>
-      <p>PracticeKit treats client records, CPD, supervision and safeguarding as distinct professional workflows—not generic documents or hour counters.</p>
+      <span class="eyebrow">Built for how counsellors actually work</span>
+      <h2>Professional records in one private app</h2>
+      <p>Client records, CPD, supervision and safeguarding each have a clear place—without clinic-software clutter.</p>
     </div>
     <div class="features-grid">
 
       <div class="feature-card">
-        <div class="feature-icon icon-blue">📋</div>
-        <h3><a class="text-link" href="/counselling-practice-management/">Client Caseload</a></h3>
-        <p>Manage your full caseload with secure session notes, status tracking, and safeguarding flags — all in one structured view.</p>
-        <ul>
-          <li>Session notes with photo attachments</li>
-          <li>Active, Paused, Completed and Concern status</li>
-          <li>No-show tracking</li>
-          <li>Safeguarding concern flags with people-informed log</li>
-          <li>PDF export for supervision</li>
-        </ul>
+        <div class="feature-icon icon-blue" aria-hidden="true">📋</div>
+        <h3><a class="text-link" href="/secure-counselling-notes/">Client records</a></h3>
+        <p>Secure session notes, caseload status and safeguarding flags in one structured view.</p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon icon-green">📚</div>
-        <h3><a class="text-link" href="/counsellor-cpd-tracker/">CPD Tracking</a></h3>
-        <p>Plan, record, review and reflect on continuing professional development. Log activities and track progress across your membership year.</p>
-        <ul>
-          <li>Log CPD with date, duration and topic</li>
-          <li>Visual annual progress tracker</li>
-          <li>Prompts for reflection and impact on practice</li>
-          <li>Export your full CPD log for BACP records</li>
-        </ul>
+        <div class="feature-icon icon-green" aria-hidden="true">📚</div>
+        <h3><a class="text-link" href="/counsellor-cpd-tracker/">CPD tracking</a></h3>
+        <p>Plan, record and reflect on continuing professional development across your membership year.</p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon icon-purple">🗓️</div>
-        <h3><a class="text-link" href="/counselling-supervision-log/">Supervision Log</a></h3>
-        <p>Keep an up-to-date record of regular and ongoing supervision, including its format, context and impact on your practice.</p>
-        <ul>
-          <li>Log date, duration and supervisor name</li>
-          <li>Regular supervision overview</li>
-          <li>Reminder when your planned session is overdue</li>
-          <li>Reflective notes per session</li>
-          <li>Export for BACP compliance records</li>
-        </ul>
+        <div class="feature-icon icon-purple" aria-hidden="true">🗓️</div>
+        <h3><a class="text-link" href="/counselling-supervision-log/">Supervision log</a></h3>
+        <p>Log regular supervision with reflective notes and impact on your practice.</p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon icon-orange">🛡️</div>
+        <div class="feature-icon icon-orange" aria-hidden="true">🛡️</div>
         <h3><a class="text-link" href="/safeguarding-records/">Safeguarding</a></h3>
-        <p>Log safeguarding concerns immediately with clear, structured records. Always know who has been informed and what actions have been taken.</p>
-        <ul>
-          <li>Per-session concern flags</li>
-          <li>People informed log</li>
-          <li>Actions to take tracking</li>
-          <li>Full concern history per client</li>
-        </ul>
+        <p>Structured concern records: what happened, who was informed, and what followed.</p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon icon-teal">🔒</div>
-        <h3><a class="text-link" href="/data-protection/">Data Protection</a></h3>
-        <p>Tools to support your data-protection responsibilities, including retention reviews, encrypted backups and a clear record history.</p>
-        <ul>
-          <li>Data retention review reminders</li>
-          <li>Encrypted backup and restore</li>
-          <li>Record access audit trail</li>
-          <li>GDPR Article 9 documentation</li>
-        </ul>
+        <div class="feature-icon icon-teal" aria-hidden="true">🔒</div>
+        <h3><a class="text-link" href="/data-protection/">Data protection</a></h3>
+        <p>Retention reviews, encrypted backups and a clear record history on your device.</p>
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon icon-blue">👥</div>
-        <h3>Groups &amp; Organisations</h3>
-        <p>Working across multiple settings or organisations? Organise clients by institution or programme while keeping all records in one private, secure app.</p>
-        <ul>
-          <li>Organise clients into groups</li>
-          <li>Filter caseload by setting or programme</li>
-          <li>Multi-setting support</li>
-          <li>Groups never affect client records</li>
-        </ul>
+        <div class="feature-icon icon-blue" aria-hidden="true">👥</div>
+        <h3>Groups &amp; settings</h3>
+        <p>Organise clients by institution or programme while keeping every record private.</p>
       </div>
 
     </div>
+    <p class="section-more"><a href="/counselling-practice-management/">Explore counselling practice management →</a></p>
   </div>
 </section>
 
 <!-- ── Deliberately focused ── -->
-<section class="section focus-section">
+<section class="section focus-section" id="why">
   <div class="container">
     <div class="section-header">
       <span class="eyebrow">Deliberately focused</span>
-      <h2>Your records—not another system running your practice</h2>
+      <h2>Records—not another system running your practice</h2>
       <p>PracticeKit stays focused on practitioner records, so sensitive information is not pulled into features you do not need.</p>
     </div>
     <div class="focus-grid">
       <div class="focus-card">
         <span class="focus-icon" aria-hidden="true">○</span>
-        <h3>No booking, billing or payments</h3>
-        <p>Keep using the diary and payment tools that already work for you. PracticeKit does not become another client-facing system to manage.</p>
+        <h3>No booking or billing</h3>
+        <p>Keep the diary and payment tools that already work. PracticeKit does not become another client-facing system.</p>
       </div>
       <div class="focus-card">
         <span class="focus-icon" aria-hidden="true">○</span>
-        <h3>No AI listening to sessions</h3>
-        <p>PracticeKit does not record, transcribe or generate notes from counselling sessions. You decide what belongs in the professional record.</p>
+        <h3>No AI listening</h3>
+        <p>No recording, transcription or AI-generated notes from sessions. You author every professional record.</p>
       </div>
       <div class="focus-card">
         <span class="focus-icon" aria-hidden="true">○</span>
         <h3>No vendor cloud database</h3>
-        <p>Your working records stay on your iPad. Optional backup exports are encrypted with a password only you know.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── Compliance ── -->
-<section class="section section-alt" id="compliance">
-  <div class="container">
-    <div class="section-header">
-      <span class="eyebrow">More than an hours tracker</span>
-      <h2>Professional records with the depth they deserve</h2>
-      <p>PracticeKit helps you preserve the reflection, context and decisions behind your records—not merely dates and totals.</p>
-    </div>
-    <div class="compliance-grid">
-      <ul class="compliance-list">
-        <li class="compliance-item">
-          <div class="compliance-badge">📋</div>
-          <div>
-            <h4>Caseload Records</h4>
-            <p>Structured session notes and safeguarding records designed around accurate and appropriate record keeping.</p>
-          </div>
-        </li>
-        <li class="compliance-item">
-          <div class="compliance-badge">📚</div>
-          <div>
-            <h4>Continuing Professional Development</h4>
-            <p>Move from identified learning needs through planning and action to evaluation and impact on practice.</p>
-          </div>
-        </li>
-        <li class="compliance-item">
-          <div class="compliance-badge">🗓️</div>
-          <div>
-            <h4>Regular and Ongoing Supervision</h4>
-            <p>Record arrangements and sessions, then capture reflective learning and examples of impact on practice.</p>
-          </div>
-        </li>
-        <li class="compliance-item">
-          <div class="compliance-badge">🛡️</div>
-          <div>
-            <h4>Safeguarding Documentation</h4>
-            <p>Keep a factual chronology of the concern, consultations, people informed, decisions, actions and follow-up.</p>
-          </div>
-        </li>
-        <li class="compliance-item">
-          <div class="compliance-badge">🔒</div>
-          <div>
-            <h4>Data Protection &amp; GDPR</h4>
-            <p>Privacy-focused controls for sensitive counselling information, including device-only working data and encrypted exports.</p>
-          </div>
-        </li>
-      </ul>
-      <div style="background:#fff;border-radius:16px;padding:40px;border:1px solid #d2d2d7;text-align:center;">
-        <p style="font-size:3rem;margin-bottom:16px;">✓</p>
-        <h3 style="margin-bottom:12px;">Clear boundaries between records</h3>
-        <p style="font-size:.95rem;margin-bottom:24px;">Client notes, CPD, supervision reflections and safeguarding records each have a different purpose. PracticeKit gives every record type its own structured place.</p>
-        <p style="font-size:.8rem;color:#86868b;line-height:1.5;">CPD · Supervision · Safeguarding · Data Protection · Session Records</p>
+        <p>Working records stay on your iPad. Optional backups are encrypted with a password only you know.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ── Privacy & Security ── -->
-<section class="section" id="privacy">
+<section class="section section-alt" id="privacy">
   <div class="container">
     <div class="section-header">
-      <span class="eyebrow">Privacy &amp; Security</span>
-      <h2>Your clients' data stays on your device. Full stop.</h2>
-      <p>PracticeKit was built from the ground up for the most sensitive data a counsellor holds — clients' mental health and safeguarding records.</p>
+      <span class="eyebrow">Privacy &amp; security</span>
+      <h2>Your clients' data stays on your device</h2>
+      <p>Built for the most sensitive data a counsellor holds—mental health and safeguarding records.</p>
     </div>
     <div class="privacy-panels">
-
       <div class="privacy-panel">
-        <span class="icon">📵</span>
-        <h3>No Cloud. Ever.</h3>
-        <p>Data is stored exclusively on your iPad. Cloud sync is permanently disabled. Your client records never pass through any server — ours or anyone else's.</p>
+        <span class="icon" aria-hidden="true">📵</span>
+        <h3>No cloud database</h3>
+        <p>Working records stay on your iPad. Client data never passes through a PracticeKit server.</p>
       </div>
-
       <div class="privacy-panel">
-        <span class="icon">🔐</span>
-        <h3>AES-256 Encrypted Backups</h3>
-        <p>When you export, your data is encrypted with AES-256-GCM using a password you choose. The key is derived with 600,000 rounds of PBKDF2 — the same standard used by financial institutions.</p>
+        <span class="icon" aria-hidden="true">🔐</span>
+        <h3>AES-256 encrypted backups</h3>
+        <p>Exports use AES-256-GCM with a password you choose. The key never leaves your control.</p>
       </div>
-
       <div class="privacy-panel">
-        <span class="icon">👁️</span>
-        <h3>Face ID &amp; Auto-Lock</h3>
-        <p>PracticeKit locks automatically after 5 minutes of inactivity and requires Face ID or Touch ID to unlock. The app hides its contents when you switch away — protecting sensitive data from view.</p>
+        <span class="icon" aria-hidden="true">👁️</span>
+        <h3>Face ID &amp; auto-lock</h3>
+        <p>Automatic lock after inactivity. Contents are hidden when you switch away from the app.</p>
       </div>
-
       <div class="privacy-panel">
-        <span class="icon">🧹</span>
-        <h3>EXIF Data Stripped</h3>
-        <p>Photos attached to session notes are stripped of all metadata — GPS location, device information, timestamps — before storage.</p>
+        <span class="icon" aria-hidden="true">🗑️</span>
+        <h3>True deletion</h3>
+        <p>Delete a client and associated sessions, notes, photos and safeguarding records go with it.</p>
       </div>
-
-      <div class="privacy-panel">
-        <span class="icon">📊</span>
-        <h3>Privacy-First Error Reporting</h3>
-        <p>Anonymised crash data is sent to Sentry to help us fix bugs. No client names, notes, or safeguarding details are ever included. Personal data transmission is permanently disabled.</p>
-      </div>
-
-      <div class="privacy-panel">
-        <span class="icon">🗑️</span>
-        <h3>True Deletion</h3>
-        <p>When you delete a client record, all associated sessions, notes, photos, and safeguarding records are permanently removed from the device — no hidden copies.</p>
-      </div>
-
     </div>
-    <div style="text-align:center;margin-top:40px;">
-      <a href="privacy.html" class="btn-secondary">Read our full Privacy &amp; Data Practices</a>
+    <div class="section-cta-row">
+      <a href="privacy.html" class="btn-secondary">Read Privacy &amp; Data Practices</a>
     </div>
   </div>
 </section>
 
-<!-- ── Founder story ── -->
-<section class="section" id="story">
+<!-- ── FAQ ── -->
+<section class="section" id="faq">
   <div class="container">
-    <div class="founder-grid">
-      <div class="founder-text">
+    <div class="section-header">
+      <span class="eyebrow">Common questions</span>
+      <h2>Before you register</h2>
+      <p>Straight answers for counsellors evaluating PracticeKit ahead of launch.</p>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>What is PracticeKit?</summary>
+        <p>A private professional-record app for UK counsellors and therapists. Client notes, reflective CPD, supervision and safeguarding in one iPad app—without a cloud database, client accounts or AI session transcription.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Where is my client data stored?</summary>
+        <p>Working records stay on your iPad. PracticeKit does not synchronise client data to a PracticeKit cloud database. Optional backup exports are encrypted with a password only you know.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Does it record or transcribe sessions?</summary>
+        <p>No. PracticeKit does not record, transcribe or generate notes from counselling sessions. You decide what belongs in the professional record.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Who is it for?</summary>
+        <p>Qualified counsellors, psychotherapists and therapists practising in the UK. Clients do not book, pay, message or create accounts through it. It is not a medical device and does not provide clinical advice.</p>
+      </details>
+      <details class="faq-item">
+        <summary>When does it launch?</summary>
+        <p>PracticeKit is coming to the App Store for iPad. Register below and we’ll notify you when early access is ready.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ── Founder ── -->
+<section class="section section-alt" id="story">
+  <div class="container">
+    <div class="founder-simple">
+      <div>
         <span class="eyebrow">Built by a counsellor, for counsellors</span>
-        <h2>Helen knew there had to be a better way.</h2>
-        <p>Helen Hughes has been a BACP-registered counsellor for over a decade. Across her practice in Staffordshire and Derbyshire — seeing clients in Burton on Trent, Lichfield, and beyond — she's helped hundreds of people through anxiety, trauma, depression, and the full complexity of human experience.</p>
-        <p>But behind every client session, there was a stack of admin that never got easier. CPD reflection in a spreadsheet. Supervision impact logged on paper. Session notes in one app, safeguarding records somewhere else. Professional records scattered across half a dozen places—none of them designed for how a counsellor actually works.</p>
-        <p>"I kept thinking: I have a Diploma in Counselling, a decade of practice, and I'm spending hours every month wrestling with spreadsheets just to prove I'm doing my job properly. There had to be a better way."</p>
-        <p>So Helen built one. PracticeKit started as a private place for the records surrounding her own work—structured enough to be useful, simple enough to keep current, and kept away from a vendor cloud database.</p>
-        <div class="founder-credentials">
-          <div class="credential"><span class="cred-icon">✓</span><span>BACP Registered Therapist</span></div>
-          <div class="credential"><span class="cred-icon">✓</span><span>Diploma in Counselling</span></div>
-          <div class="credential"><span class="cred-icon">✓</span><span>Trauma-Informed Practitioner</span></div>
-          <div class="credential"><span class="cred-icon">✓</span><span>Women's Mental Health Specialist</span></div>
-          <div class="credential"><span class="cred-icon">✓</span><span>10+ years in practice</span></div>
-        </div>
+        <h2>Designed from real practice</h2>
+        <p>PracticeKit was founded by <a href="/authors/helen-hughes/">Helen Hughes</a>, a BACP-registered therapist with over a decade in practice across Staffordshire and Derbyshire. It started as the private place she needed for her own professional records—structured enough to be useful, simple enough to keep current.</p>
+        <a href="/authors/helen-hughes/" class="text-link-arrow">Meet Helen →</a>
       </div>
-      <div class="founder-aside">
-        <div class="founder-card">
-          <div class="founder-avatar">HH</div>
-          <div class="founder-name"><a class="text-link" href="/authors/helen-hughes/">Helen Hughes</a></div>
-          <div class="founder-title">Founder &amp; Practitioner<br>BACP Registered Therapist</div>
-          <div class="founder-location">📍 Staffordshire &amp; Derbyshire</div>
-          <blockquote class="founder-quote">
-            "PracticeKit is the tool I always wished existed: clear professional records, in one place, on your iPad, completely private."
-          </blockquote>
-          <a href="/authors/helen-hughes/" class="founder-link">Read Helen’s profile →</a><br>
-          <a href="https://helen-hughes.com" target="_blank" rel="noopener" class="founder-link" style="margin-top:10px;">Professional website ↗</a>
-        </div>
-      </div>
+      <aside class="founder-aside-card" aria-label="Founder">
+        <div class="founder-avatar">HH</div>
+        <div class="founder-name">Helen Hughes</div>
+        <div class="founder-title">Founder · BACP Registered Therapist</div>
+      </aside>
     </div>
   </div>
 </section>
 
 <!-- ── Who it's for ── -->
-<section class="section section-alt" id="about">
+<section class="section" id="about">
   <div class="container">
     <div class="audience-box">
       <span class="eyebrow">Who PracticeKit is for</span>
-      <h2>Designed for qualified counsellors and therapists</h2>
-      <p>PracticeKit is a practitioner-only professional-record app for qualified counsellors, psychotherapists and therapists practising in the UK. Clients do not book, pay, message or create accounts through it.</p>
-      <p>It is for practitioners who want more structure than paper or spreadsheets, without placing their working records in a practice-management cloud.</p>
+      <h2>Qualified counsellors and therapists in the UK</h2>
+      <p>A practitioner-only professional-record app. More structure than paper or spreadsheets—without placing working records in a practice-management cloud.</p>
       <div class="not-for">
-        <strong>⚠️ PracticeKit is not a medical device</strong> and does not provide clinical advice, diagnosis, therapeutic content or automated safeguarding decisions. It supports record keeping; professional and legal responsibility remains with the practitioner.
+        <strong>PracticeKit is not a medical device</strong> and does not provide clinical advice, diagnosis or automated safeguarding decisions. Professional and legal responsibility remains with the practitioner.
       </div>
     </div>
   </div>
@@ -389,19 +374,16 @@
 <!-- ── CTA ── -->
 <section class="cta-band" id="contact">
   <div class="container">
-    <h2>Be first to know when we launch</h2>
-    <p>PracticeKit is coming to the App Store. Register your interest and we'll be in touch.</p>
-    <div style="max-width:480px;margin:0 auto;">
-      <form action="https://formspree.io/f/xqedyopb" method="POST" style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;">
-        <input type="email" name="email" placeholder="your@email.com" required
-          style="flex:1;min-width:220px;padding:13px 18px;border-radius:980px;border:none;font-size:1rem;background:#fff;">
-        <input type="hidden" name="_subject" value="PracticeKit — Early Access Request">
-        <button type="submit" class="btn-primary" style="border:none;cursor:pointer;white-space:nowrap;">
-          Register Interest
-        </button>
-      </form>
-      <p style="margin-top:14px;font-size:.8rem;color:#8899aa;">No spam. Just a launch notification when PracticeKit is ready.</p>
-    </div>
+    <h2>Be first when we launch</h2>
+    <p>PracticeKit is coming to the App Store for iPad. Register your interest and we’ll be in touch.</p>
+    <form class="signup-form" action="https://formspree.io/f/xqedyopb" method="POST">
+      <label class="sr-only" for="signup-email">Email address</label>
+      <input id="signup-email" type="email" name="email" placeholder="your@email.com" required autocomplete="email" inputmode="email">
+      <input type="hidden" name="_subject" value="PracticeKit — Early Access Request">
+      <input type="text" name="_gotcha" value="" tabindex="-1" autocomplete="off" class="hp-field" aria-hidden="true">
+      <button type="submit" class="btn-primary">Register Interest</button>
+    </form>
+    <p class="signup-note">No spam. Just a launch notification when PracticeKit is ready.</p>
   </div>
 </section>
 </main>
@@ -418,7 +400,7 @@
   <div class="container">
     <div class="footer-inner">
       <div class="footer-brand">
-        <div class="footer-logo"><img src="/assets/practicekit-logo-light.svg" alt="PracticeKit"></div>
+        <div class="footer-logo"><img src="/assets/practicekit-logo-light.svg" alt="PracticeKit" width="170" height="30"></div>
         <p>Private professional records for UK counsellors and therapists. Kept on your iPad and out of the cloud.</p>
       </div>
       <div class="footer-col">
@@ -438,6 +420,7 @@
         <ul>
           <li><a href="/about/">About PracticeKit</a></li>
           <li><a href="/authors/helen-hughes/">Helen Hughes</a></li>
+          <li><a href="/#faq">FAQ</a></li>
           <li><a href="privacy.html">Privacy Policy</a></li>
           <li><a href="privacy.html#data-practices">Data Practices</a></li>
           <li><a href="privacy.html#accessibility">Accessibility</a></li>

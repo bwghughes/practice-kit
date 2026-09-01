@@ -89,7 +89,59 @@ nav {
   font-size: .85rem; font-weight: 600; letter-spacing: .08em;
   text-transform: uppercase; color: var(--blue);
 }
+.hero-brand {
+  margin: 0 auto 18px;
+  font-size: clamp(1.15rem, 2.4vw, 1.45rem);
+  font-weight: 700;
+  letter-spacing: -.02em;
+  color: var(--navy);
+}
 .hero h1 { max-width: 720px; margin: 0 auto 24px; }
+.section-more {
+  text-align: center; margin-top: 40px; font-size: .95rem; font-weight: 500;
+}
+.section-cta-row { text-align: center; margin-top: 40px; }
+.signup-form {
+  display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;
+  max-width: 480px; margin: 0 auto;
+}
+.signup-form input[type="email"] {
+  flex: 1; min-width: 220px; padding: 13px 18px; border-radius: 980px;
+  border: none; font-size: 1rem; background: #fff; color: var(--text);
+}
+.signup-form .btn-primary { border: none; cursor: pointer; white-space: nowrap; }
+.signup-note { margin-top: 14px; font-size: .8rem; color: #8899aa; }
+.hp-field {
+  position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden;
+}
+.faq-list { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+.faq-item {
+  border: 1px solid var(--rule); border-radius: var(--radius);
+  background: var(--bg); padding: 0 24px;
+}
+.faq-item summary {
+  cursor: pointer; list-style: none; padding: 20px 0;
+  font-weight: 600; color: var(--text); font-size: 1.05rem;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: '+'; float: right; color: var(--blue); font-weight: 500; font-size: 1.2rem;
+}
+.faq-item[open] summary::after { content: '−'; }
+.faq-item p { padding: 0 0 20px; font-size: .95rem; }
+.founder-simple {
+  display: grid; grid-template-columns: 1fr 220px; gap: 48px; align-items: center;
+  max-width: 860px; margin: 0 auto;
+}
+.founder-simple h2 { margin-bottom: 16px; }
+.founder-simple p { margin-bottom: 18px; font-size: 1.05rem; }
+.text-link-arrow { font-weight: 500; font-size: .95rem; }
+.founder-aside-card {
+  text-align: center; padding: 28px 20px;
+  border: 1px solid var(--rule); border-radius: var(--radius); background: var(--bg);
+}
+.founder-aside-card .founder-avatar { margin: 0 auto 12px; }
+.founder-aside-card .founder-title { margin-bottom: 0; }
 .hero p.lead {
   font-size: 1.25rem; max-width: 580px; margin: 0 auto 40px;
   color: var(--secondary); line-height: 1.5;
@@ -407,6 +459,8 @@ blockquote.inline-quote, .founder-text p:nth-of-type(3) {
 @media (max-width: 860px) {
   .founder-grid { grid-template-columns: 1fr; gap: 40px; }
   .founder-card { position: static; }
+  .founder-simple { grid-template-columns: 1fr; gap: 28px; }
+  .founder-aside-card { max-width: 260px; }
 }
 
 /* ── Disclaimer bar ── */

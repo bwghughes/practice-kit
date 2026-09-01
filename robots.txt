@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+# Prefer the homepage and product pages for discovery
 Sitemap: https://practice-kit.app/sitemap.xml
